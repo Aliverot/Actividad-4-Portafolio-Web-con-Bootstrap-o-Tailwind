@@ -45,10 +45,10 @@ El proyecto se construyó a partir del código fuente de la plantilla "Freelance
 ## Capturas de Pantalla
 
 **Vista Principal (Cabecera y Perfil):**
-![Vista Principal](assets/img/captura1.png)
+![Vista Principal](img/captura1.png)
 
 **Vista de Proyectos:**
-![Vista Proyectos](assets/img/captura2.png)
+![Vista Proyectos](img/captura2.png)
 
 **Vista de Ventana Modal (Detalles de proyecto):**
-![Vista Modal](assets/img/captura3.png)
+![Vista Modal](img/captura3.png)

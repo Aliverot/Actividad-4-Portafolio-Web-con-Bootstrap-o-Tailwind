@@ -45,10 +45,10 @@ El portafolio está compuesto por una estructura de una sola página (Single Pag
 *(Nota: Reemplaza las rutas de las imágenes con las capturas reales de tu proyecto subidas a la carpeta img o al repositorio)*
 
 **Vista Principal (Sobre mí):**  
-![Vista Sobre Mi](img/captura-sobre-mi.png)
+![Vista Sobre Mi](img/captura1.png)
 
-**Vista de Habilidades y Proyectos:**  
-![Vista Proyectos](img/captura-proyectos.png)
+**Vista de Habilidades:**  
+![Vista Proyectos](img/captura2.png)
 
-**Vista en Dispositivo Móvil (Responsivo):**  
+**Vista de proyectos:**  
 ![Vista Movil](img/captura-movil.png)

@@ -1,52 +1,54 @@
 # Actividad 4 - Portafolio Web
 
-**Estudiante:** Leonardo Fuentes López  
-**Carrera:** Ingeniería en Sistemas Computacionales  
+**Estudiante:** Leonardo Fuentes López
+**Carrera:** Ingeniería en Sistemas Computacionales
 **Institución:** Instituto Tecnológico de Oaxaca 
 
 ---
 
 ## Descripción Breve
-Portafolio web personal estático diseñado para mostrar de manera profesional el perfil, habilidades técnicas y proyectos destacados en el área de desarrollo de software, administración de redes y simulación. El sitio está diseñado para ser totalmente responsivo (adaptable a dispositivos móviles) y mantener un código limpio y estructurado.
+Portafolio web personal estático diseñado para mostrar de manera profesional el perfil, habilidades técnicas y proyectos destacados en el área de desarrollo de software, administración de bases de datos y simulación. El sitio está diseñado para ser totalmente responsivo (adaptable a dispositivos móviles) y mantener un código limpio y estructurado.
 
 ---
 
-## Descripción del Proyecto
+## Descripción del Proyecto y Plantilla Base
 
-* **Framework CSS utilizado:** [Tailwind CSS](https://tailwindcss.com/) (implementado vía CDN).
-* **Plantilla base:** Se optó por construir una **plantilla personalizada desde cero** utilizando las clases de utilidad de Tailwind CSS, tomando como inspiración la limpieza visual y la estructura de objetos literales en JavaScript utilizados en actividades previas (como la Galería Lightbox). Al ser un diseño propio construido sobre Tailwind, la documentación base del framework se puede consultar en: [https://tailwindcss.com/docs](https://tailwindcss.com/docs)
+* **Framework CSS utilizado:** Bootstrap 5 (específicamente v5.2.3).
+* **Plantilla base:** "Freelancer" (v7.0.7) desarrollada por Start Bootstrap.
+* **Enlace de descarga de la plantilla:** https://startbootstrap.com/theme/freelancer
 
 ### Secciones del Portafolio
 
-El portafolio está compuesto por una estructura de una sola página (Single Page Application a nivel de diseño) dividida en las siguientes secciones:
+El portafolio está compuesto por una estructura de una sola página dividida en las siguientes secciones adaptadas de la plantilla original:
 
-1. **Header / Navegación:** Una barra superior fija (sticky) que permite la navegación rápida hacia las diferentes secciones del sitio mediante un desplazamiento suave (smooth scroll).
-2. **Sobre Mí:** Sección principal (Hero) que incluye un saludo, el título profesional, una breve descripción del enfoque como desarrollador y la fotografía de perfil formal.
-3. **Habilidades Técnicas:** Un panel dividido en tres categorías (Desarrollo Web, Software & Datos, Infraestructura) donde se listan las tecnologías dominadas (Laravel, Python, C++, Ubuntu Server, etc.).
-4. **Proyectos:** Una cuadrícula de tarjetas (cards) que documentan los proyectos realizados (Sistema Casa de la Cultura, MotoFix, Simulación Epidemiológica SEIR, y utileria.js), mostrando las tecnologías utilizadas en cada uno.
-5. **Footer:** Pie de página sencillo que incluye los derechos de autor con el año calculado de forma dinámica mediante JavaScript.
+1. **Navegación:** Barra superior fija (navbar) que permite la navegación rápida hacia las diferentes secciones del sitio.
+2. **Cabecera (Hero):** Sección principal que incluye la fotografía de perfil formal, el nombre completo y el título universitario.
+3. **Proyectos (Portfolio):** Una cuadrícula interactiva con ventanas emergentes (modales) que documentan los 4 proyectos realizados (Sistema Casa de la Cultura, MotoFix, Simulación Epidemiológica SEIR, y utileria.js), mostrando las tecnologías utilizadas en cada uno.
+4. **Sobre Mí & Habilidades (About):** Sección informativa con una breve descripción del perfil técnico y listado de conocimientos en desarrollo web, lenguajes (C++, Python) y administración de redes.
+5. **Footer:** Pie de página que incluye la ubicación, enlaces a redes y derechos de autor.
 
 ---
 
-## Proceso de Creación 
+## Proceso de Creación y Modificaciones
 
-1. **Estructura del Proyecto:** Se generó la estructura de directorios requerida, creando las carpetas css, js e img, además de inicializar el archivo index.html en la raíz.
-2. **Integración del Framework:** Se agregó Tailwind CSS a través de su CDN oficial en la etiqueta <head> del HTML para acelerar el proceso de maquetación y diseño responsivo sin necesidad de compilar localmente.
-3. **Maquetación HTML:** Se construyó la estructura semántica (<header>, <main>, <section>, <article>, <footer>) aplicando directamente las clases de utilidad de Tailwind para márgenes, paddings, colores y tipografía (ej. bg-gray-50, text-blue-700, grid-cols-1 md:grid-cols-2).
-4. **Configuración de CSS Personalizado:** En el archivo css/portafolio.css, se establecieron variables globales (:root) para mantener la paleta de colores corporativa y se agregó el comportamiento de desplazamiento suave (scroll-behavior: smooth) y animaciones sutiles para las tarjetas (efecto hover).
-5. **Lógica de JavaScript Nativo:** Se crearon los archivos js/portafolio.js y js/index.js. Manteniendo un estilo de programación estructurado, se diseñó un objeto literal llamado ManejadorPortafolio encargado de inicializar la lógica de la página (como la actualización dinámica del año en el footer), separando la declaración de las funciones de su ejecución.
-6. **Inserción de Contenido Real:** Se sustituyeron los datos genéricos por información verídica, agregando la fotografía formal en la carpeta img y documentando los proyectos reales desarrollados previamente.
-7. **Control de Versiones y Despliegue:** Se inicializó el repositorio local con Git, se subió a GitHub y se configuró GitHub Pages para su publicación en línea.
+El proyecto se construyó a partir del código fuente de la plantilla "Freelancer", realizando las siguientes adaptaciones para cumplir estrictamente con los lineamientos de la actividad:
+
+1. **Descarga e Implementación:** Se descargaron los archivos precompilados de la plantilla (HTML, CSS, JS) y se estructuraron en el entorno local, manteniendo el orden de las carpetas de recursos (assets).
+2. **Limpieza y Optimización:** Se eliminó por completo la sección "Contact" (y su respectivo enlace en la navegación) debido a que un formulario sin un backend funcional resulta innecesario y poco profesional para los fines estáticos de esta entrega. También se retiraron los scripts de validación asociados a dicho formulario.
+3. **Ajuste de la Cuadrícula:** La plantilla original mostraba 6 espacios de proyectos. Se redujo el grid a 4 espacios exactos para documentar únicamente los proyectos reales y desarrollados en actividades pasadas.
+4. **Traducción y Personalización de Contenido:** Se tradujo la estructura al español y se sustituyó el contenido genérico (Lorem Ipsum) por información verídica. Se agregó la fotografía formal en la ruta assets/img/ y se actualizó el texto de las ventanas modales con los detalles técnicos de cada software desarrollado.
+5. **Integración de Imágenes Propias:** Se sustituyeron las ilustraciones de relleno (placeholders) de la plantilla por imágenes/capturas representativas de cada uno de los proyectos.
+6. **Control de Versiones y Despliegue:** Se integraron los cambios al repositorio local de Git, se subió el proyecto actualizado a la rama main y se configuró GitHub Pages para su publicación en línea.
 
 ---
 
 ## Capturas de Pantalla
 
-**Vista Principal (Sobre mí):**  
-![Vista Sobre Mi](img/captura1.png)
+**Vista Principal (Cabecera y Perfil):**
+![Vista Principal](assets/img/captura1.png)
 
-**Vista de habilidades:**  
-![Vista habilidades](img/captura2.png)
+**Vista de Proyectos:**
+![Vista Proyectos](assets/img/captura2.png)
 
-**Vista de proyectos:**  
-![Vista proyectos](img/captura3.png)
+**Vista de Ventana Modal (Detalles de proyecto):**
+![Vista Modal](assets/img/captura3.png)

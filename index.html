@@ -1,112 +1,241 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio | Leonardo Fuentes López</title>
-    
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <link rel="stylesheet" href="css/portafolio.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body class="bg-gray-50 text-gray-800">
-
-    <header class="encabezado-principal bg-white shadow-sm fixed w-full top-0 z-50">
-        <div class="contenedor mx-auto px-4 py-4 flex justify-between items-center">
-            <h1 class="text-xl font-bold text-blue-700">Leonardo Fuentes</h1>
-            <nav class="hidden md:flex gap-6 font-medium">
-                <a href="#sobre-mi" class="hover:text-blue-600 transition">Sobre mí</a>
-                <a href="#habilidades" class="hover:text-blue-600 transition">Habilidades</a>
-                <a href="#proyectos" class="hover:text-blue-600 transition">Proyectos</a>
-            </nav>
-        </div>
-    </header>
-
-    <main class="contenedor mx-auto px-4 pt-28 pb-10">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="Portafolio web de Leonardo Fuentes López" />
+        <meta name="author" content="Leonardo Fuentes López" />
+        <title>Portafolio | Leonardo Fuentes López</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="#page-top">Leonardo Fuentes López</a>
+                <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menú
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Proyectos</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">Sobre Mí</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <header class="masthead bg-primary text-white text-center">
+            <div class="container d-flex align-items-center flex-column">
+                <img class="masthead-avatar mb-5 rounded-circle" style="object-fit: cover;" src="assets/img/perfil.jpeg" alt="Foto de perfil" />
+                <h1 class="masthead-heading text-uppercase mb-0">Leonardo Fuentes</h1>
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-laptop-code"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <p class="masthead-subheading font-weight-light mb-0">Ingeniería en Sistemas Computacionales - ITOax</p>
+            </div>
+        </header>
+        <section class="page-section portfolio" id="portfolio">
+            <div class="container">
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Proyectos</h2>
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-6 col-lg-6 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/casa.jpg" alt="Sistema Casa de la Cultura" />
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/moto.jpg" alt="MotoFix" />
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/dengue.jpg" alt="Simulación Dengue" />
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/uti.jpg" alt="Librería utileria.js" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="page-section bg-primary text-white mb-0" id="about">
+            <div class="container">
+                <h2 class="page-section-heading text-center text-uppercase text-white">Sobre Mí & Habilidades</h2>
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-code"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 ms-auto"><p class="lead">Soy estudiante de Ingeniería en Sistemas Computacionales enfocado en el desarrollo de soluciones integrales. Tengo experiencia en el ciclo de vida del software, desde la planeación y modelado de bases de datos hasta la implementación de interfaces de usuario.</p></div>
+                    <div class="col-lg-4 me-auto"><p class="lead">Mis habilidades técnicas incluyen desarrollo web Full-stack (HTML, CSS, JS, PHP, Laravel), programación en C++ (OpenGL, SFML), Python para análisis y simulación, y administración de redes y servidores (Ubuntu Server, pfSense).</p></div>
+                </div>
+            </div>
+        </section>
         
-        <section id="sobre-mi" class="flex flex-col-reverse md:flex-row items-center gap-10 mb-20">
-            <div class="md:w-2/3">
-                <p class="etiqueta text-blue-600 font-semibold mb-2">Ingeniería en Sistemas Computacionales</p>
-                <h2 class="text-4xl font-bold mb-4">Leonardo Fuentes López</h2>
-                <p class="text-gray-600 leading-relaxed mb-6">
-                    Estudiante en el Instituto Tecnológico de Oaxaca (ITO). Me enfoco en el desarrollo de soluciones de software, desde aplicaciones web Full-stack y programación gráfica, hasta la administración de redes y servidores.
-                </p>
-                <a href="#proyectos" class="btn-primario bg-blue-700 text-white px-6 py-2 rounded-md font-medium hover:bg-blue-800 transition">Ver Proyectos</a>
-            </div>
-            <div class="md:w-1/3 flex justify-center">
-                <img src="img/perfil.jpeg" alt="Foto de Leonardo Fuentes" class="w-56 h-56 object-cover rounded-full shadow-md border-4 border-white">
-            </div>
-        </section>
-
-        <section id="habilidades" class="mb-20">
-            <h3 class="text-2xl font-bold text-center mb-8 titulo-seccion">Habilidades Técnicas</h3>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="tarjeta p-6 bg-white rounded-lg shadow-sm border border-gray-100">
-                    <h4 class="font-bold text-blue-700 mb-3">Desarrollo Web</h4>
-                    <ul class="text-gray-600 space-y-2 list-disc list-inside">
-                        <li>HTML, CSS, JavaScript</li>
-                        <li>Laravel & PHP</li>
-                        <li>Tailwind CSS & Bootstrap</li>
-                    </ul>
-                </div>
-                <div class="tarjeta p-6 bg-white rounded-lg shadow-sm border border-gray-100">
-                    <h4 class="font-bold text-blue-700 mb-3">Software & Datos</h4>
-                    <ul class="text-gray-600 space-y-2 list-disc list-inside">
-                        <li>C++ (OpenGL, SFML)</li>
-                        <li>Python</li>
-                        <li>PostgreSQL</li>
-                    </ul>
-                </div>
-                <div class="tarjeta p-6 bg-white rounded-lg shadow-sm border border-gray-100">
-                    <h4 class="font-bold text-blue-700 mb-3">Infraestructura</h4>
-                    <ul class="text-gray-600 space-y-2 list-disc list-inside">
-                        <li>Ubuntu Server</li>
-                        <li>pfSense (DNS, DHCP, Portal Cautivo)</li>
-                        <li>Git & GitHub</li>
-                    </ul>
+        <footer class="footer text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">Ubicación</h4>
+                        <p class="lead mb-0">
+                            Oaxaca, México
+                        </p>
+                    </div>
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">Redes</h4>
+                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-github"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="col-lg-4">
+                        <h4 class="text-uppercase mb-4">Acerca de este sitio</h4>
+                        <p class="lead mb-0">
+                            Portafolio creado utilizando HTML, CSS y JS basado en el tema de Bootstrap Freelancer.
+                        </p>
+                    </div>
                 </div>
             </div>
-        </section>
-
-        <section id="proyectos" class="mb-10">
-            <h3 class="text-2xl font-bold text-center mb-8 titulo-seccion">Proyectos</h3>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                
-                <article class="tarjeta bg-white rounded-lg p-6 shadow-sm border border-gray-100">
-                    <h4 class="text-xl font-bold mb-2">Casa de la Cultura</h4>
-                    <p class="text-sm font-semibold text-blue-600 mb-3">Laravel • Web</p>
-                    <p class="text-gray-600">Sistema web para la gestión, inventario y trazabilidad de artículos en Cuilápam de Guerrero.</p>
-                </article>
-
-                <article class="tarjeta bg-white rounded-lg p-6 shadow-sm border border-gray-100">
-                    <h4 class="text-xl font-bold mb-2">MotoFix</h4>
-                    <p class="text-sm font-semibold text-blue-600 mb-3">Python • PostgreSQL</p>
-                    <p class="text-gray-600">Software de gestión para taller de motocicletas con base de datos relacional.</p>
-                </article>
-
-                <article class="tarjeta bg-white rounded-lg p-6 shadow-sm border border-gray-100">
-                    <h4 class="text-xl font-bold mb-2">Simulación Dengue (SEIR)</h4>
-                    <p class="text-sm font-semibold text-blue-600 mb-3">Python • Matemáticas</p>
-                    <p class="text-gray-600">Modelo matemático usando el método de Euler para simular un brote epidemiológico en Oaxaca de Juárez.</p>
-                </article>
-
-                <article class="tarjeta bg-white rounded-lg p-6 shadow-sm border border-gray-100">
-                    <h4 class="text-xl font-bold mb-2">utileria.js</h4>
-                    <p class="text-sm font-semibold text-blue-600 mb-3">JavaScript Vanilla</p>
-                    <p class="text-gray-600">Librería de utilidades para formato de datos y validación de formularios sin dependencias.</p>
-                </article>
-                
+        </footer>
+        <div class="copyright py-4 text-center text-white">
+            <div class="container"><small>Copyright &copy; Leonardo Fuentes López 2026</small></div>
+        </div>
+        
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Casa de la Cultura</h2>
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cabin.png" alt="..." />
+                                    <p class="mb-4">Desarrollo de un sistema de gestión web Full-stack utilizando el framework Laravel (PHP). Este proyecto fue diseñado para administrar el inventario y mantener la trazabilidad de artículos y documentos para la Casa de la Cultura de Cuilápam de Guerrero.</p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Cerrar Ventana
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section>
-
-    </main>
-
-    <footer class="bg-gray-900 text-center py-6 mt-10">
-        <p class="text-gray-400 text-sm">&copy; <span id="anioActual"></span> Leonardo Fuentes López. Todos los derechos reservados.</p>
-    </footer>
-
-    <script src="js/portafolio.js"></script>
-    <script src="js/index.js"></script>
-</body>
+        </div>
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">MotoFix</h2>
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cake.png" alt="..." />
+                                    <p class="mb-4">Software de administración desarrollado para un taller de motocicletas. El sistema fue programado utilizando Python e integra una base de datos relacional construida en PostgreSQL para el manejo eficiente de clientes, vehículos y servicios.</p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Cerrar Ventana
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Simulación SEIR</h2>
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/circus.png" alt="..." />
+                                    <p class="mb-4">Proyecto de análisis matemático y programación en Python. Se implementó el modelo epidemiológico SEIR utilizando el método numérico de Euler para simular y analizar un brote de dengue aplicado a la demografía de Oaxaca de Juárez.</p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Cerrar Ventana
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModal4" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">utileria.js</h2>
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/game.png" alt="..." />
+                                    <p class="mb-4">Librería de funciones de utilidad construida puramente con JavaScript (Vanilla JS). Fue diseñada para facilitar procesos repetitivos en el frontend, como la validación estructurada de formularios y el formato de datos sin depender de frameworks externos pesados.</p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Cerrar Ventana
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js/scripts.js"></script>
+    </body>
 </html>

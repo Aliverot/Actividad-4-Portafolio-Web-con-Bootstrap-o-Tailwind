@@ -2,7 +2,7 @@
 
 **Estudiante:** Leonardo Fuentes López  
 **Carrera:** Ingeniería en Sistemas Computacionales  
-**Institución:** Instituto Tecnológico de Oaxaca (ITOax)  
+**Institución:** Instituto Tecnológico de Oaxaca 
 
 ---
 

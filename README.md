@@ -28,7 +28,7 @@ El portafolio está compuesto por una estructura de una sola página (Single Pag
 
 ---
 
-## Proceso de Creación (Paso a Paso)
+## Proceso de Creación 
 
 1. **Estructura del Proyecto:** Se generó la estructura de directorios requerida, creando las carpetas css, js e img, además de inicializar el archivo index.html en la raíz.
 2. **Integración del Framework:** Se agregó Tailwind CSS a través de su CDN oficial en la etiqueta <head> del HTML para acelerar el proceso de maquetación y diseño responsivo sin necesidad de compilar localmente.
@@ -42,13 +42,11 @@ El portafolio está compuesto por una estructura de una sola página (Single Pag
 
 ## Capturas de Pantalla
 
-*(Nota: Reemplaza las rutas de las imágenes con las capturas reales de tu proyecto subidas a la carpeta img o al repositorio)*
-
 **Vista Principal (Sobre mí):**  
 ![Vista Sobre Mi](img/captura1.png)
 
-**Vista de Habilidades:**  
-![Vista Proyectos](img/captura2.png)
+**Vista de habilidades:**  
+![Vista habilidades](img/captura2.png)
 
 **Vista de proyectos:**  
-![Vista Movil](img/captura-movil.png)
+![Vista proyectos](img/captura3.png)
